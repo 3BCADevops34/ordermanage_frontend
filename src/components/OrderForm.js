@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const OrderForm = ({ order, products, onSubmit, onCancel }) => {
-  const  [formData, setFormData] = useState(order || {
+ const OrderForm = ({ order, products, onSubmit, onCancel }) => {
+ const  [formData, setFormData] = useState(order || {
     orderNumber: '',
     product: { id: '' },
     quantity: '',
