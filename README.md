@@ -105,16 +105,16 @@ The frontend communicates with the backend API endpoints:
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
-| `/api/products` | GET | Fetch all products |
-| `/api/products` | POST | Create new product |
-| `/api/products/{id}` | GET | Fetch product by ID |
-| `/api/products/{id}` | PUT | Update product |
-| `/api/products/{id}` | DELETE | Delete product |
-| `/api/orders` | GET | Fetch all orders |
-| `/api/orders` | POST | Create new order |
-| `/api/orders/{id}` | GET | Fetch order by ID |
-| `/api/orders/{id}` | PUT | Update order |
-| `/api/orders/{id}` | DELETE | Delete order |
+| `/products` | GET | Fetch all products |
+| `/products` | POST | Create new product |
+| `/products/{id}` | GET | Fetch product by ID |
+| `/products/{id}` | PUT | Update product |
+| `/products/{id}` | DELETE | Delete product |
+| `/orders` | GET | Fetch all orders |
+| `/orders` | POST | Create new order |
+| `/orders/{id}` | GET | Fetch order by ID |
+| `/orders/{id}` | PUT | Update order |
+| `/orders/{id}` | DELETE | Delete order |
 
 **Base URL:** `https://hardware-management-2-0.onrender.com`
 

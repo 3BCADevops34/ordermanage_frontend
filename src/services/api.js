@@ -1,7 +1,15 @@
 import axios from 'axios';
 
+const rawBaseUrl = process.env.REACT_APP_API_BASE_URL || '';
+
+// Normalize common deployment misconfiguration where base URL ends with /api.
+const normalizedBaseUrl = rawBaseUrl
+  .trim()
+  .replace(/\/+$/, '')
+  .replace(/\/api$/, '');
+
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL,
+  baseURL: normalizedBaseUrl,
 });
 
 // Product API
@@ -19,3 +27,5 @@ export const updateOrder = (id, order) => api.put(`/orders/${id}`, order);
 export const deleteOrder = (id) => api.delete(`/orders/${id}`);
 
 export default api;
+
+
