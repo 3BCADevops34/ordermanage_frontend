@@ -3,10 +3,21 @@ import axios from 'axios';
 const rawBaseUrl = process.env.REACT_APP_API_BASE_URL || '';
 
 // Normalize common deployment misconfiguration where base URL ends with /api.
-const normalizedBaseUrl = rawBaseUrl
-  .trim()
-  .replace(/\/+$/, '')
-  .replace(/\/api$/, '');
+const normalizeBaseUrl = (value) => {
+  let normalized = value.trim();
+
+  while (normalized.endsWith('/')) {
+    normalized = normalized.slice(0, -1);
+  }
+
+  if (normalized.endsWith('/api')) {
+    normalized = normalized.slice(0, -4);
+  }
+
+  return normalized;
+};
+
+const normalizedBaseUrl = normalizeBaseUrl(rawBaseUrl);
 
 const api = axios.create({
   baseURL: normalizedBaseUrl,
