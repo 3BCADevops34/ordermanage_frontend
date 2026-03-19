@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/30</span>
+                <span class='fraction'>30/30</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/20</span>
+                <span class='fraction'>20/20</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -102,77 +102,77 @@
 <a name='L37'></a><a href='#L37'>37</a>
 <a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import axios from 'axios';
 &nbsp;
-const rawBaseUrl = <span class="cstat-no" title="statement not covered" >process.env.REACT_APP_API_BASE_URL || '';</span>
-const normalizeBaseUrl = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(v</span>alue) =&gt; {</span>
-  let normalized = <span class="cstat-no" title="statement not covered" >value.trim();</span>
+const rawBaseUrl = process.env.REACT_APP_API_BASE_URL || '';
+const normalizeBaseUrl = (value) =&gt; {
+  let normalized = value.trim();
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  while (normalized.endsWith('/')) {</span>
-<span class="cstat-no" title="statement not covered" >    normalized = normalized.slice(0, -1);</span>
+  while (normalized.endsWith('/')) {
+    normalized = normalized.slice(0, -1);
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (normalized.endsWith('/api')) {</span>
-<span class="cstat-no" title="statement not covered" >    normalized = normalized.slice(0, -4);</span>
+  if (normalized.endsWith('/api')) {
+    normalized = normalized.slice(0, -4);
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return normalized;</span>
+  return normalized;
 };
 &nbsp;
-const normalizedBaseUrl = <span class="cstat-no" title="statement not covered" >normalizeBaseUrl(rawBaseUrl);</span>
+const normalizedBaseUrl = normalizeBaseUrl(rawBaseUrl);
 &nbsp;
-const api = <span class="cstat-no" title="statement not covered" >axios.create({</span>
+const api = axios.create({
   baseURL: normalizedBaseUrl,
 });
 &nbsp;
 // Product API
-export const getProducts = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >api.get('/products');</span></span>
-export const getProductById = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>d) =&gt; <span class="cstat-no" title="statement not covered" >api.get(`/products/${id}`);</span></span>
-export const createProduct = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(p</span>roduct) =&gt; <span class="cstat-no" title="statement not covered" >api.post('/products', product);</span></span>
-export const updateProduct = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>d, product) =&gt; <span class="cstat-no" title="statement not covered" >api.put(`/products/${id}`, product);</span></span>
-export const deleteProduct = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>d) =&gt; <span class="cstat-no" title="statement not covered" >api.delete(`/products/${id}`);</span></span>
+export const getProducts = () =&gt; api.get('/products');
+export const getProductById = (id) =&gt; api.get(`/products/${id}`);
+export const createProduct = (product) =&gt; api.post('/products', product);
+export const updateProduct = (id, product) =&gt; api.put(`/products/${id}`, product);
+export const deleteProduct = (id) =&gt; api.delete(`/products/${id}`);
 &nbsp;
 // Order API
-export const getOrders = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >api.get('/orders');</span></span>
-export const getOrderById = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>d) =&gt; <span class="cstat-no" title="statement not covered" >api.get(`/orders/${id}`);</span></span>
-export const createOrder = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(o</span>rder) =&gt; <span class="cstat-no" title="statement not covered" >api.post('/orders', order);</span></span>
-export const updateOrder = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>d, order) =&gt; <span class="cstat-no" title="statement not covered" >api.put(`/orders/${id}`, order);</span></span>
-export const deleteOrder = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>d) =&gt; <span class="cstat-no" title="statement not covered" >api.delete(`/orders/${id}`);</span></span>
+export const getOrders = () =&gt; api.get('/orders');
+export const getOrderById = (id) =&gt; api.get(`/orders/${id}`);
+export const createOrder = (order) =&gt; api.post('/orders', order);
+export const updateOrder = (id, order) =&gt; api.put(`/orders/${id}`, order);
+export const deleteOrder = (id) =&gt; api.delete(`/orders/${id}`);
 &nbsp;
 export default api;</pre></td></tr></table></pre>
 
@@ -181,7 +181,7 @@ export default api;</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-03-19T11:28:16.376Z
+                at 2026-03-19T11:48:43.520Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
