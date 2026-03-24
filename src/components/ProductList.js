@@ -120,7 +120,7 @@ const ProductList = () => {
             </thead>
             <tbody className="divide-y divide-gray-200">
               {products.map((product) => (
-                <tr key={product.id} className="hover:bg-gray-50">
+                <tr key={product.id} className="hover:bg-gray-50" style={{ backgroundColor: product.quantity < 10 ? '#ec450d' : 'white' }}>
                   <td className="px-6 py-3 text-gray-800">{product.name}</td>
                   <td className="px-6 py-3 text-gray-600">{product.sku}</td>
                   <td className="px-6 py-3 text-gray-600">${product.price}</td>
