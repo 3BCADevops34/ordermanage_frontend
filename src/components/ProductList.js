@@ -68,8 +68,11 @@ const ProductList = () => {
   return (
     <div>
       <div className="flex justify-between items-center mb-6 animate-slideIn">
-        <h2 className="section-title">Products</h2>
-        <button
+      <div>
+          <h2 className="section-title">Products</h2>
+          <p className="text-sm text-gray-600 mt-1">Total Products: {products.length}</p>
+        </div>
+    <button
           onClick={() => {
             setShowForm(!showForm);
             setEditingProduct(null);
